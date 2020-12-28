@@ -27,7 +27,7 @@ def main():
         "Host" : "m.cloud.189.cn",
         "Accept-Encoding" : "gzip, deflate",
     }
-    #签到
+    # 签到
     response = s.get(surl,headers=headers)
     netdiskBonus = response.json()['netdiskBonus']
     print(f"签到获得{netdiskBonus}M空间")
